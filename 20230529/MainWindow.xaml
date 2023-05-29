@@ -6,21 +6,30 @@
         xmlns:local="clr-namespace:_20230529"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Width="NaN">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="214*"/>
+            <RowDefinition Height="221*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="216*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black"/>
                 <GradientStop Color="#FFC66054" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <MediaElement HorizontalAlignment="Left" Height="246" Margin="64,89,0,0" VerticalAlignment="Top" Width="642"/>
-        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="135,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="388" Height="45"/>
-        <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="536,27,0,0" VerticalAlignment="Top" Height="39" Width="165"/>
-        <Border x:Name="MedShow" BorderBrush="Black" BorderThickness="1" Margin="135,76,83,76" Height="NaN" Width="NaN"/>
-        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="143,377,0,0" VerticalAlignment="Top" Height="38" Width="89"/>
-        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="273,377,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Height="38" Width="91"/>
-        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="576,387,0,0" VerticalAlignment="Top" Height="38" Width="86"/>
-        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="420,382,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Click="Button_Click" Height="38" Width="82"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="67,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="388" Height="45" Grid.Column="3"/>
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="59,172,0,0" VerticalAlignment="Top" Height="38" Width="89" RenderTransformOrigin="1.137,1.062" Grid.Column="3" Grid.Row="1" Click="btnPlay_Click"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="189,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Height="38" Width="91" Grid.Column="3" Grid.Row="1" Click="btnPause_Click"/>
+        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="482,172,0,0" VerticalAlignment="Top" Height="38" Width="86" Grid.Column="3" Grid.Row="1" Click="btnExit_Click"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="336,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Click="Button_Click" Height="38" Width="82" Grid.Column="3" Grid.Row="1"/>
+        <Button x:Name="btnOpenFile" Grid.Column="3" Content="開啟檔案" HorizontalAlignment="Left" Margin="498,31,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnOpenFile_Click_1"/>
+        <MediaElement x:Name="MedShow" Grid.Column="3" HorizontalAlignment="Left" Height="246" Margin="67,96,0,0" VerticalAlignment="Top" Width="540" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
