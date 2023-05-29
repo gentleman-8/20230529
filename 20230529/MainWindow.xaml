@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_20230529"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Width="NaN">
+    <Grid x:Name="___txtTime" Width="NaN">
         <Grid.RowDefinitions>
             <RowDefinition Height="214*"/>
             <RowDefinition Height="221*"/>
@@ -23,15 +23,16 @@
                 <GradientStop Color="#FFC66054" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="67,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="388" Height="45" Grid.Column="3"/>
-        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="59,172,0,0" VerticalAlignment="Top" Height="38" Width="89" RenderTransformOrigin="1.137,1.062" Grid.Column="3" Grid.Row="1" Click="btnPlay_Click"/>
-        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="189,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Height="38" Width="91" Grid.Column="3" Grid.Row="1" Click="btnPause_Click"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="67,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" Height="45" Grid.Column="3"/>
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="140,173,0,0" VerticalAlignment="Top" Height="38" Width="89" RenderTransformOrigin="1.137,1.062" Grid.Column="3" Grid.Row="1" Click="btnPlay_Click"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="248,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Height="38" Width="91" Grid.Column="3" Grid.Row="1" Click="btnPause_Click"/>
         <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="482,172,0,0" VerticalAlignment="Top" Height="38" Width="86" Grid.Column="3" Grid.Row="1" Click="btnExit_Click"/>
-        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="336,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Click="Button_Click" Height="38" Width="82" Grid.Column="3" Grid.Row="1"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="364,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.113" Click="Button_Click" Height="38" Width="82" Grid.Column="3" Grid.Row="1"/>
         <Button x:Name="btnOpenFile" Grid.Column="3" Content="開啟檔案" HorizontalAlignment="Left" Margin="498,31,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnOpenFile_Click_1"/>
         <MediaElement x:Name="MedShow" Grid.Column="3" HorizontalAlignment="Left" Height="246" Margin="67,96,0,0" VerticalAlignment="Top" Width="540" Grid.RowSpan="2" MediaOpened="MedShow_MediaOpened"/>
         <Slider x:Name="sliVolume" Grid.Column="3" HorizontalAlignment="Left" Margin="588,178,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" ValueChanged="sliVolume_ValueChanged"/>
         <Slider x:Name="sliProgress" Grid.Column="3" HorizontalAlignment="Left" Margin="59,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="557" Height="14" ValueChanged="sliProgress_ValueChanged" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
+        <TextBox x:Name="txtTime" Grid.Column="3" HorizontalAlignment="Left" Margin="10,175,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Height="35" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>
