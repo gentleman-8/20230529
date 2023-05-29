@@ -31,7 +31,7 @@
         <Button x:Name="btnOpenFile" Grid.Column="3" Content="開啟檔案" HorizontalAlignment="Left" Margin="498,31,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnOpenFile_Click_1"/>
         <MediaElement x:Name="MedShow" Grid.Column="3" HorizontalAlignment="Left" Height="246" Margin="67,96,0,0" VerticalAlignment="Top" Width="540" Grid.RowSpan="2" MediaOpened="MedShow_MediaOpened"/>
         <Slider x:Name="sliVolume" Grid.Column="3" HorizontalAlignment="Left" Margin="588,178,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" ValueChanged="sliVolume_ValueChanged"/>
-        <Slider x:Name="sliProgress" Grid.Column="3" HorizontalAlignment="Left" Margin="59,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="557" Height="14" ValueChanged="sliProgress_ValueChanged"/>
+        <Slider x:Name="sliProgress" Grid.Column="3" HorizontalAlignment="Left" Margin="59,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="557" Height="14" ValueChanged="sliProgress_ValueChanged" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
 
     </Grid>
 </Window>
